@@ -26,7 +26,7 @@ const Gallery = () => {
     },
     {
       id: '3',
-      url: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80',
+      url: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80',
       title: 'Iceland',
       description: 'Icelandic landscape.'
     },

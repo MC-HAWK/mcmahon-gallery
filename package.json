@@ -3,9 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://mc-hawk.github.io/mcmahon-gallery/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "node -e \"const fs = require('fs'); let data = fs.readFileSync('dist/index.html', 'utf8'); data = data.replace(/(\\/assets\\/)/g, '/mcmahon-gallery/assets/'); fs.writeFileSync('dist/index.html', data);\"",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
