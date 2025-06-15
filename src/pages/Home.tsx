@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div 
-      className="w-full min-h-screen relative flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+      className="w-full h-screen relative flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat pt-20"
       style={{
         backgroundImage: `url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80)`,
       }}

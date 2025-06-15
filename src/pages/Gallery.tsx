@@ -61,9 +61,9 @@ const Gallery = () => {
   };
 
   return (
-    <div className="w-screen min-h-[calc(100vh-80px)]">
-      <h1 className="text-4xl font-bold mb-8 px-4">Gallery</h1>
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+    <div className="w-screen min-h-[calc(100vh-80px)] px-4 py-8">
+      <h1 className="text-4xl font-bold mb-8">Gallery</h1>
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {images.map((image) => (
           <div
             key={image.id}

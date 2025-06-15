@@ -13,7 +13,7 @@ function App() {
       <div className="min-h-screen w-full">
         <Navbar />
         <Layout>
-          <main className="py-8 w-full">
+          <main className="w-full">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/gallery" element={<Gallery />} />
