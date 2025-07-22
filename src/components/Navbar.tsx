@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-screen bg-white border-b border-gray-100 z-50">
       <div className="flex justify-between items-center h-20 w-full max-w-full px-4 md:px-8">
-        <Link to="/" className="font-bold text-lg tracking-widest uppercase text-black">Ken McMahon</Link>
+        <Link to="/" className="font-bold text-lg tracking-widest uppercase text-black hover:text-gray-600 no-underline">Ken McMahon</Link>
         {/* Desktop menu */}
         <div className="hidden md:flex space-x-8 items-center">
           <div className="relative" ref={galleryDropdownRef}>
@@ -45,9 +45,9 @@ const Navbar = () => {
                 className="absolute left-0 mt-2 w-48 bg-white text-black border border-gray-200 shadow-lg rounded z-50"
                 style={{ minWidth: '12rem' }}
               >
-                <Link to="/gallery" className="block px-4 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>POST 2000</Link>
-                <Link to="/gallery/pre2000" className="block px-4 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PRE 2000</Link>
-                <Link to="/gallery/post2000" className="block px-4 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>MISCELLANEOUS</Link>
+                <Link to="/post2000" className="block px-4 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>POST 2000</Link>
+                <Link to="/pre2000" className="block px-4 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PRE 2000</Link>
+                <Link to="/miscellaneous" className="block px-4 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>MISCELLANEOUS</Link>
               </div>
             )}
           </div>
@@ -75,9 +75,9 @@ const Navbar = () => {
           </button>
           {galleryOpen && (
             <div className="pl-4">
-              <Link to="/gallery" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>POST 2000</Link>
-              <Link to="/gallery/pre2000" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PRE 2000</Link>
-              <Link to="/gallery/post2000" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>MISCELLANEOUS</Link>
+              <Link to="/post2000" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>POST 2000</Link>
+              <Link to="/pre2000" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PRE 2000</Link>
+              <Link to="/miscellaneous" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>MISCELLANEOUS</Link>
             </div>
           )}
           <Link to="/about" className="block py-2 uppercase text-sm tracking-wider text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>About</Link>

@@ -18,9 +18,9 @@ function App() {
           <main className="w-full">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/gallery" element={<Post2000 />} />
-              <Route path="/gallery/pre2000" element={<Pre2000 />} />
-              <Route path="/gallery/post2000" element={<Miscellaneous />} />
+              <Route path="/post2000" element={<Post2000 />} />
+              <Route path="/pre2000" element={<Pre2000 />} />
+              <Route path="/miscellaneous" element={<Miscellaneous />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>

@@ -45,25 +45,18 @@ const PRE2000 = () => {
   return (
     <div className="w-screen min-h-[calc(100vh-80px)] px-4 py-8">
       <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">PRE 2000</h1>
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
         {images.map((image) => (
           <div
             key={image.id}
-            className="cursor-pointer overflow-hidden rounded-lg border border-gray-200 shadow hover:shadow-xl transition-shadow duration-300 w-full bg-gray-100 flex items-center justify-center"
+            className="cursor-pointer flex items-center justify-center hover:shadow-lg transition-shadow duration-300 p-2"
             onClick={() => handleImageClick(image)}
           >
-            <div className="w-72 h-72 flex items-center justify-center bg-gray-100">
-              <img
-                src={image.url}
-                alt={image.title || ''}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-            <div className="p-4">
-              {image.title && (
-                <h3 className="text-xl font-semibold">{image.title}</h3>
-              )}
-            </div>
+            <img
+              src={image.url}
+              alt={image.title || ''}
+              className="max-w-full max-h-full object-contain"
+            />
           </div>
         ))}
       </div>
