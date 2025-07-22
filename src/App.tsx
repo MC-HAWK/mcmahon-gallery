@@ -3,9 +3,11 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import Gallery from './pages/Gallery';
+import Miscellaneous from './pages/Miscellaneous';
+import Pre2000 from './pages/Pre2000';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Post2000 from './pages/Post2000';
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
           <main className="w-full">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/gallery" element={<Post2000 />} />
+              <Route path="/gallery/pre2000" element={<Pre2000 />} />
+              <Route path="/gallery/post2000" element={<Miscellaneous />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>

@@ -7,38 +7,29 @@ interface Image {
   description?: string;
 }
 
-const Post2000 = () => {
+const Miscellaneous = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
-  // Stock images from Unsplash
+  // Example images for Post 2000 gallery
   const images: Image[] = [
     {
       id: '1',
-      url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg'
+      url: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
+      title: 'Modern Skyline',
+      description: 'A city skyline after 2000.'
     },
     {
       id: '2',
-      url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg'
+      url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+      title: 'Contemporary Art',
+      description: 'Art installation from the 2010s.'
     },
     {
       id: '3',
-      url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg'
-    },
-    {
-      id: '4',
-      url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg'
-    },
-    {
-      id: '5',
-      url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg'
+      url: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80',
+      title: 'New Bridge',
+      description: 'A bridge built after 2000.'
     }
-    // how to have a title and description for each image
-    // {
-    //   id: '6',
-    //   url: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
-    //   title: 'Snowy Mountains',
-    //   description: 'Snow covered mountains.'
-    // },
   ];
 
   const handleImageClick = (image: Image) => {
@@ -53,7 +44,7 @@ const Post2000 = () => {
 
   return (
     <div className="w-screen min-h-[calc(100vh-80px)] px-4 py-8">
-      <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">POST 2000</h1>
+      <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">MISCELLANEOUS</h1>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {images.map((image) => (
           <div
@@ -106,4 +97,4 @@ const Post2000 = () => {
   );
 };
 
-export default Post2000; 
+export default Miscellaneous; 
