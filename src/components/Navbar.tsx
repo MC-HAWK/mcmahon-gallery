@@ -47,6 +47,7 @@ const Navbar = () => {
               >
                 <Link to="/post2000" className="block px-4 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>POST 2000</Link>
                 <Link to="/pre2000" className="block px-4 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PRE 2000</Link>
+                <Link to="/unstretched-paintings" className="block px-4 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>UNSTRETCHED PAINTINGS</Link>
                 <Link to="/miscellaneous" className="block px-4 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>MISCELLANEOUS</Link>
               </div>
             )}
@@ -77,6 +78,7 @@ const Navbar = () => {
             <div className="pl-4">
               <Link to="/post2000" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>POST 2000</Link>
               <Link to="/pre2000" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PRE 2000</Link>
+              <Link to="/unstretched-paintings" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>UNSTRETCHED PAINTINGS</Link>
               <Link to="/miscellaneous" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>MISCELLANEOUS</Link>
             </div>
           )}

@@ -8,6 +8,7 @@ import Pre2000 from './pages/Pre2000';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Post2000 from './pages/Post2000';
+import UnstretchedPaintings from './pages/UnstretchedPaintings';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/post2000" element={<Post2000 />} />
               <Route path="/pre2000" element={<Pre2000 />} />
+              <Route path="/unstretched-paintings" element={<UnstretchedPaintings />} />
               <Route path="/miscellaneous" element={<Miscellaneous />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
