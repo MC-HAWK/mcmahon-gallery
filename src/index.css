@@ -5,6 +5,29 @@
 @layer base {
   body {
     @apply bg-white text-gray-900;
+    /* Prevent scaling issues on Mac browsers */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* Prevent zoom on input focus on iOS */
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Prevent scaling issues on images */
+  img {
+    max-width: 100%;
+    height: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Ensure proper scaling on Mac browsers */
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 }
 

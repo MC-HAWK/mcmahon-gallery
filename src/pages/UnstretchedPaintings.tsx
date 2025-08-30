@@ -111,22 +111,24 @@ const UnstretchedPaintings = () => {
       {/* Modal */}
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
           onClick={handleModalClose}
         >
-          <div className="max-w-4xl max-h-[90vh] relative">
-            <img
-              src={selectedImage.url}
-              alt={selectedImage.title || ''}
-              className="max-w-full max-h-[90vh] object-contain"
-            />
+          <div className="relative max-w-4xl max-h-[90vh] flex flex-col">
+            <div className="flex-1 flex items-center justify-center">
+              <img
+                src={selectedImage.url}
+                alt={selectedImage.title || ''}
+                className="max-w-full max-h-[80vh] object-contain"
+              />
+            </div>
             {(selectedImage.title || selectedImage.description) && (
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+              <div className="bg-black bg-opacity-75 text-white p-4 mt-2 rounded">
                 {selectedImage.title && (
-                  <h3 className="text-xl font-semibold">{selectedImage.title}</h3>
+                  <h3 className="text-lg font-semibold mb-2">{selectedImage.title}</h3>
                 )}
                 {selectedImage.description && (
-                  <p className="whitespace-pre-line">{selectedImage.description}</p>
+                  <p className="text-sm whitespace-pre-line">{selectedImage.description}</p>
                 )}
               </div>
             )}
