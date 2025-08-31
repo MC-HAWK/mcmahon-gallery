@@ -7,38 +7,40 @@ interface Image {
   description?: string;
 }
 
-const Post2000 = () => {
+const Pre2000Photographs = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
-  // Stock images from Unsplash
   const images: Image[] = [
     {
       id: '1',
-      url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg'
+      url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
+      title: 'Classic Street Scene',
+      description: 'Black and white photograph \n 16" x 20"'
     },
     {
       id: '2',
-      url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg'
+      url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
+      title: 'Vintage Portrait',
+      description: 'Gelatin silver print \n 11" x 14"'
     },
     {
       id: '3',
-      url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg'
+      url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
+      title: 'Historical Architecture',
+      description: 'Black and white photograph \n 20" x 24"'
     },
     {
       id: '4',
-      url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg'
+      url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
+      title: 'Documentary Image',
+      description: 'Gelatin silver print \n 8" x 10"'
     },
     {
       id: '5',
-      url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg'
+      url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
+      title: 'Traditional Landscape',
+      description: 'Black and white photograph \n 18" x 22"'
     }
-    // how to have a title and description for each image
-    // {
-    //   id: '6',
-    //   url: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
-    //   title: 'Snowy Mountains',
-    //   description: 'Snow covered mountains.'
-    // },
   ];
 
   const handleImageClick = (image: Image) => {
@@ -53,26 +55,19 @@ const Post2000 = () => {
 
   return (
     <div className="w-screen min-h-[calc(100vh-80px)] px-4 py-8">
-      <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">POST 2000</h1>
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">PRE 2000 - PHOTOGRAPHS</h1>
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
         {images.map((image) => (
           <div
             key={image.id}
-            className="cursor-pointer overflow-hidden rounded-lg border border-gray-200 shadow hover:shadow-xl transition-shadow duration-300 w-full bg-gray-100 flex items-center justify-center"
+            className="cursor-pointer flex items-center justify-center hover:shadow-lg transition-shadow duration-300 p-2"
             onClick={() => handleImageClick(image)}
           >
-            <div className="w-72 h-72 flex items-center justify-center bg-gray-100">
-              <img
-                src={image.url}
-                alt={image.title || ''}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-            <div className="p-4">
-              {image.title && (
-                <h3 className="text-xl font-semibold">{image.title}</h3>
-              )}
-            </div>
+            <img
+              src={image.url}
+              alt={image.title || ''}
+              className="max-w-full max-h-full object-contain"
+            />
           </div>
         ))}
       </div>
@@ -97,7 +92,7 @@ const Post2000 = () => {
                   <h3 className="text-lg font-semibold mb-2">{selectedImage.title}</h3>
                 )}
                 {selectedImage.description && (
-                  <p className="text-sm">{selectedImage.description}</p>
+                  <p className="text-sm whitespace-pre-line">{selectedImage.description}</p>
                 )}
               </div>
             )}
@@ -108,4 +103,4 @@ const Post2000 = () => {
   );
 };
 
-export default Post2000; 
+export default Pre2000Photographs;

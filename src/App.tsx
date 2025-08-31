@@ -3,12 +3,20 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import Miscellaneous from './pages/Miscellaneous';
-import Pre2000 from './pages/Pre2000';
+import ExperimentalHome from './pages/ExperimentalHome';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Post2000 from './pages/Post2000';
-import UnstretchedPaintings from './pages/UnstretchedPaintings';
+
+// POST 2000 Galleries
+import Post2000Photographs from './pages/Post2000Photographs';
+import Post2000Drawings from './pages/Post2000Drawings';
+import Post2000Paintings from './pages/Post2000Paintings';
+
+// PRE 2000 Galleries
+import Pre2000Photographs from './pages/Pre2000Photographs';
+import Pre2000Drawings from './pages/Pre2000Drawings';
+import Pre2000Paintings from './pages/Pre2000Paintings';
+import Pre2000UnstretchedPaintings from './pages/Pre2000UnstretchedPaintings';
 
 function App() {
   return (
@@ -19,10 +27,20 @@ function App() {
           <main className="w-full">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/post2000" element={<Post2000 />} />
-              <Route path="/pre2000" element={<Pre2000 />} />
-              <Route path="/unstretched-paintings" element={<UnstretchedPaintings />} />
-              <Route path="/miscellaneous" element={<Miscellaneous />} />
+              <Route path="/experimental" element={<ExperimentalHome />} />
+              
+              {/* POST 2000 Routes */}
+              <Route path="/post2000-photographs" element={<Post2000Photographs />} />
+              <Route path="/post2000-drawings" element={<Post2000Drawings />} />
+              <Route path="/post2000-paintings" element={<Post2000Paintings />} />
+              
+              {/* PRE 2000 Routes */}
+              <Route path="/pre2000-photographs" element={<Pre2000Photographs />} />
+              <Route path="/pre2000-drawings" element={<Pre2000Drawings />} />
+              <Route path="/pre2000-paintings" element={<Pre2000Paintings />} />
+              <Route path="/pre2000-unstretched-paintings" element={<Pre2000UnstretchedPaintings />} />
+              
+              {/* Other Routes */}
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>

@@ -7,28 +7,39 @@ interface Image {
   description?: string;
 }
 
-const Miscellaneous = () => {
+const Post2000Drawings = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
-  // Example images for Post 2000 gallery
   const images: Image[] = [
     {
       id: '1',
-      url: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
-      title: 'Modern Skyline',
-      description: 'A city skyline after 2000.'
+      url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
+      title: 'Abstract Composition',
+      description: 'Charcoal on paper \n 18" x 24"'
     },
     {
       id: '2',
-      url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
-      title: 'Contemporary Art',
-      description: 'Art installation from the 2010s.'
+      url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
+      title: 'Figure Study',
+      description: 'Graphite on paper \n 22" x 30"'
     },
     {
       id: '3',
-      url: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80',
-      title: 'New Bridge',
-      description: 'A bridge built after 2000.'
+      url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
+      title: 'Urban Sketch',
+      description: 'Ink on paper \n 16" x 20"'
+    },
+    {
+      id: '4',
+      url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
+      title: 'Geometric Forms',
+      description: 'Pencil on paper \n 20" x 26"'
+    },
+    {
+      id: '5',
+      url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
+      title: 'Portrait Study',
+      description: 'Charcoal on paper \n 24" x 32"'
     }
   ];
 
@@ -44,7 +55,7 @@ const Miscellaneous = () => {
 
   return (
     <div className="w-screen min-h-[calc(100vh-80px)] px-4 py-8">
-      <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">MISCELLANEOUS</h1>
+      <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">POST 2000 - DRAWINGS</h1>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
         {images.map((image) => (
           <div
@@ -81,7 +92,7 @@ const Miscellaneous = () => {
                   <h3 className="text-lg font-semibold mb-2">{selectedImage.title}</h3>
                 )}
                 {selectedImage.description && (
-                  <p className="text-sm">{selectedImage.description}</p>
+                  <p className="text-sm whitespace-pre-line">{selectedImage.description}</p>
                 )}
               </div>
             )}
@@ -92,4 +103,4 @@ const Miscellaneous = () => {
   );
 };
 
-export default Miscellaneous; 
+export default Post2000Drawings;

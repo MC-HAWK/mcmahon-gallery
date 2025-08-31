@@ -7,39 +7,40 @@ interface Image {
   description?: string;
 }
 
-const Post2000 = () => {
+const Pre2000Paintings = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
   const images: Image[] = [
     {
       id: '1',
-      url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg'
+      url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
+      title: 'Traditional Landscape',
+      description: 'Oil on canvas \n 30" x 40"'
     },
     {
       id: '2',
-      url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg'
+      url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
+      title: 'Classical Still Life',
+      description: 'Oil on canvas \n 24" x 36"'
     },
     {
       id: '3',
-      url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg'
+      url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
+      title: 'Academic Portrait',
+      description: 'Oil on canvas \n 20" x 24"'
     },
     {
       id: '4',
-      url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg'
+      url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
+      title: 'Historical Scene',
+      description: 'Oil on canvas \n 36" x 48"'
     },
     {
       id: '5',
       url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
-      title: 'Snowy Mountains',
-      description: 'Snow covered mountains.'
+      title: 'Figurative Study',
+      description: 'Oil on canvas \n 28" x 44"'
     }
-    // how to have a title and description for each image
-    // {
-    //   id: '6',
-    //   url: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
-    //   title: 'Snowy Mountains',
-    //   description: 'Snow covered mountains.'
-    // },
   ];
 
   const handleImageClick = (image: Image) => {
@@ -54,7 +55,7 @@ const Post2000 = () => {
 
   return (
     <div className="w-screen min-h-[calc(100vh-80px)] px-4 py-8">
-      <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">POST 2000</h1>
+      <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">PRE 2000 - PAINTINGS</h1>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
         {images.map((image) => (
           <div
@@ -91,7 +92,7 @@ const Post2000 = () => {
                   <h3 className="text-lg font-semibold mb-2">{selectedImage.title}</h3>
                 )}
                 {selectedImage.description && (
-                  <p className="text-sm">{selectedImage.description}</p>
+                  <p className="text-sm whitespace-pre-line">{selectedImage.description}</p>
                 )}
               </div>
             )}
@@ -102,4 +103,4 @@ const Post2000 = () => {
   );
 };
 
-export default Post2000; 
+export default Pre2000Paintings;
