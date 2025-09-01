@@ -14,67 +14,67 @@ const Pre2000UnstretchedPaintings = () => {
   const images: Image[] = [
     {
       id: '1',
-      url: 'https://live.staticflickr.com/65535/54748241267_62da25ee69_b.jpg',
+      url: 'https://live.staticflickr.com/65535/54757383343_718a8c229d_b.jpg',
       title: '11-20-78',
       description: 'Acrylic on Unstretched Canvas \n 43" x 78"'
     },
     {
       id: '2',
-      url: 'https://live.staticflickr.com/65535/54748240942_1b59f764a1_b.jpg',
+      url: 'https://live.staticflickr.com/65535/54756308947_fb97ed16b7_b.jpg',
       title: '7-7-78',
       description: 'acrylic on unstretched canvas \n 50" x 71"'
     },
     {
       id: '3',
-      url: 'https://live.staticflickr.com/65535/54748241032_0d8a8af0af_b.jpg',
-      title: '9-10-78',
+      url: 'https://live.staticflickr.com/65535/54757382988_6371c30c8c_b.jpg',
+      title: '12-12-77',
       description: 'acrylic on unstretched canvas \n 47" X 72"'
     },
     {
       id: '4',
-      url: 'https://live.staticflickr.com/65535/54749093846_f0ed68b2b0_b.jpg',
+      url: 'https://live.staticflickr.com/65535/54757498845_2b3f577454_b.jpg',
       title: '2-10-78',
       description: 'acrylic on unstretched canvas \n 60" x 78"'
     },
     {
       id: '5',
-      url: 'https://live.staticflickr.com/65535/54749094591_f90ceb31e9_b.jpg',
+      url: 'https://live.staticflickr.com/65535/54757391639_4466c0a883_b.jpg',
       title: '11-2-77',
       description: 'acrylic on unstretched canvas \n 47" x 74"'
     },
     {
       id: '6',
-      url: 'https://live.staticflickr.com/65535/54749302273_6eb5f7f545_b.jpg',
+      url: 'https://live.staticflickr.com/65535/54757162501_748d7ed030_b.jpg',
       title: '12-20-77',
       description: 'acrylic on unstretched canvas  \n 47" x 72"'
     },
     {
       id: '7',
-      url: 'https://live.staticflickr.com/65535/54749302498_6e76ec6700_b.jpg',
+      url: 'https://live.staticflickr.com/65535/54757382943_97ba527387_b.jpg',
       title: '10-3-78',
       description: 'acrylic on unstretched canvas \n 47" x 75"'
     },
     {
       id: '8',
-      url: 'https://live.staticflickr.com/65535/54749310799_854cca8422_b.jpg',
+      url: 'https://live.staticflickr.com/65535/54757391464_75cae3a92e_b.jpg',
       title: '5-20-79',
       description: 'acrylic on unstretched canvas \n 84" x 36" '
     },
     {
       id: '9',
-      url: 'https://live.staticflickr.com/65535/54749310904_de7b86ee66_b.jpg',
+      url: 'https://live.staticflickr.com/65535/54757498700_96548da1b6_b.jpg',
       title: '4-29-79',
       description: 'acrylic on unstretched canvas \n 84" x 36"'
     },
     {
       id: '10',
-      url: 'https://live.staticflickr.com/65535/54749433135_9acb9f0808_b.jpg',
+      url: 'https://live.staticflickr.com/65535/54756309042_e6758da8cf_b.jpg',
       title: '5-15-78',
       description: 'acrylic on unstretched canvas \n 60" x 75"'
     },
     {
       id: '11',
-      url: 'https://live.staticflickr.com/65535/54749433230_e27d35b4e6_b.jpg',
+      url: 'https://live.staticflickr.com/65535/54756308897_c81dbcfa95_b.jpg',
       title: '8-11-78',
       description: 'acrylic on unstretched canvas \n 35" x 69"'
     }
