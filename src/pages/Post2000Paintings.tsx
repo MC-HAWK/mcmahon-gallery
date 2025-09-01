@@ -75,24 +75,24 @@ const Post2000Paintings = () => {
       {/* Modal */}
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-2 sm:p-4"
           onClick={handleModalClose}
         >
-          <div className="relative max-w-4xl max-h-[90vh] flex flex-col">
-            <div className="flex-1 flex items-center justify-center">
+          <div className="relative w-full max-w-[95vw] h-full max-h-[95vh] flex flex-col">
+            <div className="flex-1 flex items-center justify-center min-h-0">
               <img
                 src={selectedImage.url}
                 alt={selectedImage.title || ''}
-                className="max-w-full max-h-[80vh] object-contain"
+                className="max-w-full max-h-full object-contain"
               />
             </div>
             {(selectedImage.title || selectedImage.description) && (
-              <div className="bg-black bg-opacity-75 text-white p-4 mt-2 rounded">
+              <div className="bg-black bg-opacity-75 text-white p-3 sm:p-4 mt-2 rounded flex-shrink-0">
                 {selectedImage.title && (
-                  <h3 className="text-lg font-semibold mb-2">{selectedImage.title}</h3>
+                  <h3 className="text-base sm:text-lg font-semibold mb-2">{selectedImage.title}</h3>
                 )}
                 {selectedImage.description && (
-                  <p className="text-sm whitespace-pre-line">{selectedImage.description}</p>
+                  <p className="text-xs sm:text-sm whitespace-pre-line">{selectedImage.description}</p>
                 )}
               </div>
             )}

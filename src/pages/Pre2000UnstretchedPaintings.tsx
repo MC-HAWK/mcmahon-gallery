@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ImageModal from '../components/ImageModal';
 
 interface Image {
   id: string;
@@ -109,32 +110,7 @@ const Pre2000UnstretchedPaintings = () => {
       </div>
 
       {/* Modal */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
-          onClick={handleModalClose}
-        >
-          <div className="relative max-w-4xl max-h-[90vh] flex flex-col">
-            <div className="flex-1 flex items-center justify-center">
-              <img
-                src={selectedImage.url}
-                alt={selectedImage.title || ''}
-                className="max-w-full max-h-[80vh] object-contain"
-              />
-            </div>
-            {(selectedImage.title || selectedImage.description) && (
-              <div className="bg-black bg-opacity-75 text-white p-4 mt-2 rounded">
-                {selectedImage.title && (
-                  <h3 className="text-lg font-semibold mb-2">{selectedImage.title}</h3>
-                )}
-                {selectedImage.description && (
-                  <p className="text-sm whitespace-pre-line">{selectedImage.description}</p>
-                )}
-              </div>
-            )}
-          </div>
-        </div>
-      )}
+      <ImageModal image={selectedImage} onClose={handleModalClose} />
     </div>
   );
 };
