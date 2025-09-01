@@ -12,36 +12,36 @@ const Pre2000Photographs = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
   const images: Image[] = [
-    {
-      id: '1',
-      url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
-      title: 'Classic Street Scene',
-      description: 'Black and white photograph \n 16" x 20"'
-    },
-    {
-      id: '2',
-      url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
-      title: 'Vintage Portrait',
-      description: 'Gelatin silver print \n 11" x 14"'
-    },
-    {
-      id: '3',
-      url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
-      title: 'Historical Architecture',
-      description: 'Black and white photograph \n 20" x 24"'
-    },
-    {
-      id: '4',
-      url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
-      title: 'Documentary Image',
-      description: 'Gelatin silver print \n 8" x 10"'
-    },
-    {
-      id: '5',
-      url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
-      title: 'Traditional Landscape',
-      description: 'Black and white photograph \n 18" x 22"'
-    }
+    // {
+    //   id: '1',
+    //   url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
+    //   title: 'Classic Street Scene',
+    //   description: 'Black and white photograph \n 16" x 20"'
+    // },
+    // {
+    //   id: '2',
+    //   url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
+    //   title: 'Vintage Portrait',
+    //   description: 'Gelatin silver print \n 11" x 14"'
+    // },
+    // {
+    //   id: '3',
+    //   url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
+    //   title: 'Historical Architecture',
+    //   description: 'Black and white photograph \n 20" x 24"'
+    // },
+    // {
+    //   id: '4',
+    //   url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
+    //   title: 'Documentary Image',
+    //   description: 'Gelatin silver print \n 8" x 10"'
+    // },
+    // {
+    //   id: '5',
+    //   url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
+    //   title: 'Traditional Landscape',
+    //   description: 'Black and white photograph \n 18" x 22"'
+    // }
   ];
 
   const handleImageClick = (image: Image) => {

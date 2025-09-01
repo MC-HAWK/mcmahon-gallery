@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ImageModal from '../components/ImageModal';
 
 interface Image {
   id: string;
@@ -7,39 +8,39 @@ interface Image {
   description?: string;
 }
 
-const Post2000Drawings = () => {
+const CurrentWorkPaintings = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
   const images: Image[] = [
     // {
     //   id: '1',
     //   url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
-    //   title: 'Abstract Composition',
-    //   description: 'Charcoal on paper \n 18" x 24"'
+    //   title: 'Contemporary Landscape I',
+    //   description: 'Oil on canvas \n 48" x 60"'
     // },
     // {
     //   id: '2',
     //   url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
-    //   title: 'Figure Study',
-    //   description: 'Graphite on paper \n 22" x 30"'
+    //   title: 'Modern Abstract',
+    //   description: 'Acrylic on canvas \n 36" x 48"'
     // },
     // {
     //   id: '3',
     //   url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
-    //   title: 'Urban Sketch',
-    //   description: 'Ink on paper \n 16" x 20"'
+    //   title: 'Urban Scene',
+    //   description: 'Oil on canvas \n 40" x 50"'
     // },
     // {
     //   id: '4',
     //   url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
-    //   title: 'Geometric Forms',
-    //   description: 'Pencil on paper \n 20" x 26"'
+    //   title: 'Contemporary Still Life',
+    //   description: 'Acrylic on canvas \n 30" x 40"'
     // },
     // {
     //   id: '5',
     //   url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
-    //   title: 'Portrait Study',
-    //   description: 'Charcoal on paper \n 24" x 32"'
+    //   title: 'Modern Portrait',
+    //   description: 'Oil on canvas \n 24" x 30"'
     // }
   ];
 
@@ -55,7 +56,7 @@ const Post2000Drawings = () => {
 
   return (
     <div className="w-screen min-h-[calc(100vh-80px)] px-4 py-8">
-      <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">POST 2000 - DRAWINGS</h1>
+      <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">CURRENT WORK - PAINTINGS</h1>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
         {images.map((image) => (
           <div
@@ -73,34 +74,9 @@ const Post2000Drawings = () => {
       </div>
 
       {/* Modal */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
-          onClick={handleModalClose}
-        >
-          <div className="relative max-w-4xl max-h-[90vh] flex flex-col">
-            <div className="flex-1 flex items-center justify-center">
-              <img
-                src={selectedImage.url}
-                alt={selectedImage.title || ''}
-                className="max-w-full max-h-[80vh] object-contain"
-              />
-            </div>
-            {(selectedImage.title || selectedImage.description) && (
-              <div className="bg-black bg-opacity-75 text-white p-4 mt-2 rounded">
-                {selectedImage.title && (
-                  <h3 className="text-lg font-semibold mb-2">{selectedImage.title}</h3>
-                )}
-                {selectedImage.description && (
-                  <p className="text-sm whitespace-pre-line">{selectedImage.description}</p>
-                )}
-              </div>
-            )}
-          </div>
-        </div>
-      )}
+      <ImageModal image={selectedImage} onClose={handleModalClose} />
     </div>
   );
 };
 
-export default Post2000Drawings;
+export default CurrentWorkPaintings;

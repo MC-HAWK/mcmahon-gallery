@@ -11,36 +11,36 @@ const Post2000Paintings = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
   const images: Image[] = [
-    {
-      id: '1',
-      url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
-      title: 'Contemporary Landscape',
-      description: 'Acrylic on canvas \n 36" x 48"'
-    },
-    {
-      id: '2',
-      url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
-      title: 'Abstract Expression',
-      description: 'Oil on canvas \n 40" x 60"'
-    },
-    {
-      id: '3',
-      url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
-      title: 'Urban Composition',
-      description: 'Mixed media on canvas \n 30" x 40"'
-    },
-    {
-      id: '4',
-      url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
-      title: 'Color Field Study',
-      description: 'Acrylic on canvas \n 24" x 36"'
-    },
-    {
-      id: '5',
-      url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
-      title: 'Modern Still Life',
-      description: 'Oil on canvas \n 28" x 44"'
-    }
+    // {
+    //   id: '1',
+    //   url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
+    //   title: 'Contemporary Landscape',
+    //   description: 'Acrylic on canvas \n 36" x 48"'
+    // },
+    // {
+    //   id: '2',
+    //   url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
+    //   title: 'Abstract Expression',
+    //   description: 'Oil on canvas \n 40" x 60"'
+    // },
+    // {
+    //   id: '3',
+    //   url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
+    //   title: 'Urban Composition',
+    //   description: 'Mixed media on canvas \n 30" x 40"'
+    // },
+    // {
+    //   id: '4',
+    //   url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
+    //   title: 'Color Field Study',
+    //   description: 'Acrylic on canvas \n 24" x 36"'
+    // },
+    // {
+    //   id: '5',
+    //   url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
+    //   title: 'Modern Still Life',
+    //   description: 'Oil on canvas \n 28" x 44"'
+    // }
   ];
 
   const handleImageClick = (image: Image) => {

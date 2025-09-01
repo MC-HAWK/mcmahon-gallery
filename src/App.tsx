@@ -18,6 +18,10 @@ import Pre2000Drawings from './pages/Pre2000Drawings';
 import Pre2000Paintings from './pages/Pre2000Paintings';
 import Pre2000UnstretchedPaintings from './pages/Pre2000UnstretchedPaintings';
 
+// CURRENT WORK Galleries
+import CurrentWorkDrawings from './pages/CurrentWorkDrawings';
+import CurrentWorkPaintings from './pages/CurrentWorkPaintings';
+
 function App() {
   return (
     <Router>
@@ -39,6 +43,10 @@ function App() {
               <Route path="/pre2000-drawings" element={<Pre2000Drawings />} />
               <Route path="/pre2000-paintings" element={<Pre2000Paintings />} />
               <Route path="/pre2000-unstretched-paintings" element={<Pre2000UnstretchedPaintings />} />
+              
+              {/* CURRENT WORK Routes */}
+              <Route path="/current-work-drawings" element={<CurrentWorkDrawings />} />
+              <Route path="/current-work-paintings" element={<CurrentWorkPaintings />} />
               
               {/* Other Routes */}
               <Route path="/about" element={<About />} />

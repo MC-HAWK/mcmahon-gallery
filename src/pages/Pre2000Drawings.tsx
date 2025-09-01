@@ -11,36 +11,36 @@ const Pre2000Drawings = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
   const images: Image[] = [
-    {
-      id: '1',
-      url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
-      title: 'Classical Figure Study',
-      description: 'Charcoal on paper \n 18" x 24"'
-    },
-    {
-      id: '2',
-      url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
-      title: 'Traditional Portrait',
-      description: 'Graphite on paper \n 16" x 20"'
-    },
-    {
-      id: '3',
-      url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
-      title: 'Academic Drawing',
-      description: 'Conté crayon on paper \n 22" x 30"'
-    },
-    {
-      id: '4',
-      url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
-      title: 'Still Life Study',
-      description: 'Pencil on paper \n 14" x 18"'
-    },
-    {
-      id: '5',
-      url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
-      title: 'Anatomical Study',
-      description: 'Charcoal on paper \n 20" x 26"'
-    }
+    // {
+    //   id: '1',
+    //   url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
+    //   title: 'Classical Figure Study',
+    //   description: 'Charcoal on paper \n 18" x 24"'
+    // },
+    // {
+    //   id: '2',
+    //   url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
+    //   title: 'Traditional Portrait',
+    //   description: 'Graphite on paper \n 16" x 20"'
+    // },
+    // {
+    //   id: '3',
+    //   url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
+    //   title: 'Academic Drawing',
+    //   description: 'Conté crayon on paper \n 22" x 30"'
+    // },
+    // {
+    //   id: '4',
+    //   url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
+    //   title: 'Still Life Study',
+    //   description: 'Pencil on paper \n 14" x 18"'
+    // },
+    // {
+    //   id: '5',
+    //   url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
+    //   title: 'Anatomical Study',
+    //   description: 'Charcoal on paper \n 20" x 26"'
+    // }
   ];
 
   const handleImageClick = (image: Image) => {
