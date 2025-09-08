@@ -11,36 +11,144 @@ const Pre2000Paintings = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
   const images: Image[] = [
-    // {
-    //   id: '1',
-    //   url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
-    //   title: 'Traditional Landscape',
-    //   description: 'Oil on canvas \n 30" x 40"'
-    // },
-    // {
-    //   id: '2',
-    //   url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
-    //   title: 'Classical Still Life',
-    //   description: 'Oil on canvas \n 24" x 36"'
-    // },
-    // {
-    //   id: '3',
-    //   url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
-    //   title: 'Academic Portrait',
-    //   description: 'Oil on canvas \n 20" x 24"'
-    // },
-    // {
-    //   id: '4',
-    //   url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
-    //   title: 'Historical Scene',
-    //   description: 'Oil on canvas \n 36" x 48"'
-    // },
-    // {
-    //   id: '5',
-    //   url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
-    //   title: 'Figurative Study',
-    //   description: 'Oil on canvas \n 28" x 44"'
-    // }
+    {
+      id: '1',
+      url: 'https://live.staticflickr.com/65535/54746945742_4b9c87aa0b_b.jpg',
+      title: 'Untitled 1983',
+      description: 'Watercolor/Gouache on Paper \n 38" x 28"'
+    },
+    {
+      id: '2',
+      url: 'https://live.staticflickr.com/65535/54746946177_e5156a7495_b.jpg',
+      title: 'Ming.   1986',
+      description: 'Acrylic on Canvas \n 72" x 64"'
+    },
+    {
+      id: '3',
+      url: 'https://live.staticflickr.com/65535/54747799546_b34276b51b_b.jpg',
+      title: 'Mesa  1982',
+      description: 'Gouache on Paper \n 40" x 28"'
+    },
+    {
+      id: '4',
+      url: 'https://live.staticflickr.com/65535/54747799616_cb1f7194f9_b.jpg',
+      title: 'Birthday Dog  1975',
+      description: 'Oil on Canvas \n 48" x 60"'
+    },
+    {
+      id: '5',
+      url: 'https://live.staticflickr.com/65535/54747799621_5c26e0fe50_b.jpg',
+      title: 'Water March 1976',
+      description: 'Watercolor on Paper \n 30" x 20"'
+    },
+    {
+      id: '6',
+      url: 'https://live.staticflickr.com/65535/54747799681_c3dd58050e_b.jpg',
+      title: 'Pocket Drift  1976',
+      description: 'Watercolor on Paper \n 20" x 30"'
+    },
+    {
+      id: '7',
+      url: 'https://live.staticflickr.com/65535/54747799761_e7c5d1dd25_b.jpg',
+      title: 'Pidrum   1983',
+      description: 'Acrylic on Canvas \n 66" x 54"'
+    },
+    {
+      id: '8',  
+      url: 'https://live.staticflickr.com/65535/54747799791_c7bde35c20_b.jpg',
+      title: 'Flagging  1982',
+      description: 'Watercolor/Gouache on Paper \n 40" x 28"'
+    },
+    {
+      id: '9',
+      url: 'https://live.staticflickr.com/65535/54747799886_77dfc28c74_b.jpg',
+      title: 'Sternklang  1985',
+      description: 'Acrylic on Canvas \n 72" x 62"'
+    },
+    {
+      id: '10',
+      url: 'https://live.staticflickr.com/65535/54747799931_d40f2fb38f_b.jpg',
+      title: 'Persimmon Shift  1983',
+      description: 'Acrylic/Gouache on Paper \n 38" x 28"'
+    },
+    {
+      id: '11',
+      url: 'https://live.staticflickr.com/65535/54748011488_7d83e8b049_b.jpg',
+      title: 'https://live.staticflickr.com/65535/54748011488_7d83e8b049_b.jpg',
+      description: 'Watercolor/Gouache on Paper \n 38" x 28"'
+    },
+    {
+      id: '12',
+      url: 'https://live.staticflickr.com/65535/54748011573_a726e9157a_b.jpg',
+      title: 'Brenda\'s Bite 1976',
+      description: 'Acrylic on Canvas \n 66" x 84"'
+    },
+    {
+      id: '13',
+      url: 'https://live.staticflickr.com/65535/54748011603_8a96a627bc_b.jpg',
+      title: 'Swingtime  1976',
+      description: 'Watercolor on Paper \n 38" x 28"'
+    },
+    {
+      id: '14',
+      url: 'https://live.staticflickr.com/65535/54748011643_13de682629_b.jpg',
+      title: 'PopPocket 1976',
+      description: 'acrylic on canvas 60 x 72'
+    },
+    {
+      id: '15',
+      url: 'https://live.staticflickr.com/65535/54748011703_af27096b83_b.jpg',
+      title: 'Untitled. 1984',
+      description: 'Watercolor/Gouache on Paper \n 38" x 28"'
+    },
+    {
+      id: '16',
+      url: 'https://live.staticflickr.com/65535/54748011738_6a41605655_b.jpg',
+      title: 'Untitled.  1984',
+      description: 'Watercolor/Gouache on Paper \n 38" x 28"'
+    },
+    {
+      id: '17',
+      url: 'https://live.staticflickr.com/65535/54748011883_44c0bee62e_b.jpg',
+      title: 'Bitches Brew   1977',
+      description: 'Acrylic on Canvas \n 72" x 61"'
+    },
+    {
+      id: '18',
+      url: 'https://live.staticflickr.com/65535/54748011948_a0e1dcbb5a_b.jpg',
+      title: 'Untitled 1977',
+      description: 'Watercolor on Paper \n 30" x 22"'
+    },
+    {
+      id: '19',
+      url: 'https://live.staticflickr.com/65535/54748015709_5f459654ce_b.jpg',
+      title: 'Untitled. 1982',
+      description: 'Watercolor/Gouache on Paper \n 38" x 28"'
+    },
+    {
+      id: '20',
+      url: 'https://live.staticflickr.com/65535/54748015869_10de3fcf38_b.jpg',
+      title: 'Untitled. 1983',
+      description: 'Watercolor/Gouache on Paper \n 38" x 28"'
+    },
+    {
+      id: '21',
+      url: 'https://live.staticflickr.com/65535/54748015979_c59d88433b_b.jpg',
+      title: 'Red Crossing.  1981',
+      description: 'Watercolor/Gouache on Paper \n 38" x 28"'
+    },
+    {
+      id: '22',
+      url: 'https://live.staticflickr.com/65535/54748144840_3ef5d05712_b.jpg',
+      title: 'Folding  1984',
+      description: 'Watercolor/Gouache on Paper \n 38" x 28"'
+    },
+    {
+      id: '23',
+      url: 'https://live.staticflickr.com/65535/54748144910_de1a36e16f_b.jpg',
+      title: 'Ftan   1985',
+      description: 'Acrylic on Canvas \n 72" x 64"'
+    }
   ];
 
   const handleImageClick = (image: Image) => {
