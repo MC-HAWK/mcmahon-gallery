@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface Image {
   id: string;
@@ -9,6 +9,18 @@ interface Image {
 
 const Post2000Paintings = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
+  const [isLaptopHeight, setIsLaptopHeight] = useState(false);
+
+  useEffect(() => {
+    const checkViewportHeight = () => {
+      setIsLaptopHeight(window.innerHeight >= 600 && window.innerHeight <= 800);
+    };
+    
+    checkViewportHeight();
+    window.addEventListener('resize', checkViewportHeight);
+    
+    return () => window.removeEventListener('resize', checkViewportHeight);
+  }, []);
 
   const images: Image[] = [
     // {
@@ -53,6 +65,14 @@ const Post2000Paintings = () => {
     }
   };
 
+  const handleImageLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = e.currentTarget;
+    const container = img.closest('.image-modal-container') as HTMLElement;
+    if (container) {
+      container.style.setProperty('--image-width', `${img.offsetWidth}px`);
+    }
+  };
+
   return (
     <div className="w-screen min-h-[calc(100vh-80px)] px-4 py-8">
       <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">POST 2000 - PAINTINGS</h1>
@@ -78,16 +98,20 @@ const Post2000Paintings = () => {
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-2 sm:p-4"
           onClick={handleModalClose}
         >
-          <div className="relative w-full max-w-[95vw] h-full max-h-[95vh] flex flex-col">
-            <div className="flex-1 flex items-center justify-center min-h-0">
+          <div className="relative max-w-5xl max-h-[85vh] flex flex-col items-center image-modal-container">
+            <div className="flex items-center justify-center">
               <img
                 src={selectedImage.url}
                 alt={selectedImage.title || ''}
-                className="max-w-full max-h-full object-contain"
+                className="max-w-full max-h-[75vh] object-contain"
+                style={{
+                  maxHeight: isLaptopHeight ? '85vh' : '75vh'
+                }}
+                onLoad={handleImageLoad}
               />
             </div>
             {(selectedImage.title || selectedImage.description) && (
-              <div className="bg-black bg-opacity-75 text-white p-3 sm:p-4 mt-2 rounded flex-shrink-0">
+              <div className="bg-black bg-opacity-75 text-white p-3 sm:p-4 mt-1 rounded" style={{ width: 'var(--image-width, auto)' }}>
                 {selectedImage.title && (
                   <h3 className="text-base sm:text-lg font-semibold mb-2">{selectedImage.title}</h3>
                 )}
