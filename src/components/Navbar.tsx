@@ -33,12 +33,12 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-screen bg-white border-b border-gray-100 z-50">
       <div className="flex justify-between items-center h-20 w-full max-w-full px-4 md:px-8">
-        <Link to="/" className="font-bold text-lg tracking-widest uppercase text-black hover:text-gray-600 no-underline">Ken McMahon</Link>
+        <Link to="/" className="font-bold text-xl tracking-widest uppercase text-black hover:text-gray-600 no-underline">Ken McMahon</Link>
         {/* Desktop menu */}
         <div className="hidden md:flex space-x-8 items-center">
           <div className="relative" ref={galleryDropdownRef}>
             <button
-              className="uppercase text-sm tracking-wider text-black hover:text-gray-600 flex items-center gap-1 bg-transparent border-none p-0 m-0 focus:outline-none"
+              className="uppercase text-base tracking-wider text-black hover:text-gray-600 flex items-center gap-1 bg-transparent border-none p-0 m-0 focus:outline-none"
               onClick={() => setGalleryDropdown((open) => !open)}
             >
               ART WORK
@@ -50,30 +50,30 @@ const Navbar = () => {
               >
                 {/* PRE 2000 Section */}
                 <div className="border-b border-gray-100">
-                  <div className="px-4 py-2 font-semibold text-black uppercase text-sm tracking-wider bg-gray-50">PRE 2000</div>
-                  <Link to="/pre2000-photographs" className="block px-6 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PHOTOGRAPHS</Link>
-                  <Link to="/pre2000-drawings" className="block px-6 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>DRAWINGS</Link>
-                  <Link to="/pre2000-paintings" className="block px-6 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PAINTINGS</Link>
-                  <Link to="/pre2000-unstretched-paintings" className="block px-6 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>UNSTRETCHED PAINTINGS</Link>
+                  <div className="px-4 py-2 font-semibold text-black uppercase text-base tracking-wider bg-gray-50">PRE 2000</div>
+                  <Link to="/pre2000-photographs" className="block px-6 py-2 text-black uppercase text-base tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PHOTOGRAPHS</Link>
+                  <Link to="/pre2000-drawings" className="block px-6 py-2 text-black uppercase text-base tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>DRAWINGS</Link>
+                  <Link to="/pre2000-paintings" className="block px-6 py-2 text-black uppercase text-base tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PAINTINGS</Link>
+                  <Link to="/pre2000-unstretched-paintings" className="block px-6 py-2 text-black uppercase text-base tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>UNSTRETCHED PAINTINGS</Link>
                 </div>
                 {/* POST 2000 Section */}
                 <div className="border-b border-gray-100">
-                  <div className="px-4 py-2 font-semibold text-black uppercase text-sm tracking-wider bg-gray-50">POST 2000</div>
-                  <Link to="/post2000-photographs" className="block px-6 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PHOTOGRAPHS</Link>
-                  <Link to="/post2000-drawings" className="block px-6 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>DRAWINGS</Link>
-                  <Link to="/post2000-paintings" className="block px-6 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PAINTINGS</Link>
+                  <div className="px-4 py-2 font-semibold text-black uppercase text-base tracking-wider bg-gray-50">POST 2000</div>
+                  <Link to="/post2000-photographs" className="block px-6 py-2 text-black uppercase text-base tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PHOTOGRAPHS</Link>
+                  <Link to="/post2000-drawings" className="block px-6 py-2 text-black uppercase text-base tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>DRAWINGS</Link>
+                  <Link to="/post2000-paintings" className="block px-6 py-2 text-black uppercase text-base tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PAINTINGS</Link>
                 </div>
                 {/* CURRENT WORK Section */}
                 <div>
-                  <div className="px-4 py-2 font-semibold text-black uppercase text-sm tracking-wider bg-gray-50">CURRENT WORK</div>
-                  <Link to="/current-work-drawings" className="block px-6 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>DRAWINGS</Link>
-                  <Link to="/current-work-paintings" className="block px-6 py-2 text-black uppercase text-sm tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PAINTINGS</Link>
+                  <div className="px-4 py-2 font-semibold text-black uppercase text-base tracking-wider bg-gray-50">CURRENT WORK</div>
+                  <Link to="/current-work-drawings" className="block px-6 py-2 text-black uppercase text-base tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>DRAWINGS</Link>
+                  <Link to="/current-work-paintings" className="block px-6 py-2 text-black uppercase text-base tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setGalleryDropdown(false)}>PAINTINGS</Link>
                 </div>
               </div>
             )}
           </div>
-          <Link to="/about" className="uppercase text-sm tracking-wider text-black hover:text-gray-600">About</Link>
-          <Link to="/contact" className="uppercase text-sm tracking-wider text-black hover:text-gray-600">Contact</Link>
+          <Link to="/about" className="uppercase text-base tracking-wider text-black hover:text-gray-600">About</Link>
+          <Link to="/contact" className="uppercase text-base tracking-wider text-black hover:text-gray-600">Contact</Link>
         </div>
         {/* Hamburger for mobile */}
         <div className="md:hidden">
@@ -89,7 +89,7 @@ const Navbar = () => {
         <div className="md:hidden px-4 pb-4">
           {/* Gallery accordion */}
           <button
-            className="w-full text-left py-2 uppercase text-sm tracking-wider text-black hover:text-gray-600 flex items-center bg-transparent rounded-none m-0 p-0"
+            className="w-full text-left py-2 uppercase text-base tracking-wider text-black hover:text-gray-600 flex items-center bg-transparent rounded-none m-0 p-0"
             onClick={() => setGalleryOpen((open) => !open)}
           >
             ART WORK
@@ -98,50 +98,50 @@ const Navbar = () => {
             <div className="pl-4">
               {/* PRE 2000 Mobile Section */}
               <button
-                className="w-full text-left py-2 uppercase text-sm tracking-wider text-black hover:text-gray-600 flex items-center bg-transparent rounded-none m-0 p-0"
+                className="w-full text-left py-2 uppercase text-base tracking-wider text-black hover:text-gray-600 flex items-center bg-transparent rounded-none m-0 p-0"
                 onClick={() => setPre2000Open((open) => !open)}
               >
                 PRE 2000
               </button>
               {pre2000Open && (
                 <div className="pl-4">
-                  <Link to="/pre2000-photographs" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PHOTOGRAPHS</Link>
-                  <Link to="/pre2000-drawings" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>DRAWINGS</Link>
-                  <Link to="/pre2000-paintings" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PAINTINGS</Link>
-                  <Link to="/pre2000-unstretched-paintings" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>UNSTRETCHED PAINTINGS</Link>
+                  <Link to="/pre2000-photographs" className="block py-2 text-base text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PHOTOGRAPHS</Link>
+                  <Link to="/pre2000-drawings" className="block py-2 text-base text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>DRAWINGS</Link>
+                  <Link to="/pre2000-paintings" className="block py-2 text-base text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PAINTINGS</Link>
+                  <Link to="/pre2000-unstretched-paintings" className="block py-2 text-base text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>UNSTRETCHED PAINTINGS</Link>
                 </div>
               )}
               {/* POST 2000 Mobile Section */}
               <button
-                className="w-full text-left py-2 uppercase text-sm tracking-wider text-black hover:text-gray-600 flex items-center bg-transparent rounded-none m-0 p-0"
+                className="w-full text-left py-2 uppercase text-base tracking-wider text-black hover:text-gray-600 flex items-center bg-transparent rounded-none m-0 p-0"
                 onClick={() => setPost2000Open((open) => !open)}
               >
                 POST 2000
               </button>
               {post2000Open && (
                 <div className="pl-4">
-                  <Link to="/post2000-photographs" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PHOTOGRAPHS</Link>
-                  <Link to="/post2000-drawings" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>DRAWINGS</Link>
-                  <Link to="/post2000-paintings" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PAINTINGS</Link>
+                  <Link to="/post2000-photographs" className="block py-2 text-base text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PHOTOGRAPHS</Link>
+                  <Link to="/post2000-drawings" className="block py-2 text-base text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>DRAWINGS</Link>
+                  <Link to="/post2000-paintings" className="block py-2 text-base text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PAINTINGS</Link>
                 </div>
               )}
               {/* CURRENT WORK Mobile Section */}
               <button
-                className="w-full text-left py-2 uppercase text-sm tracking-wider text-black hover:text-gray-600 flex items-center bg-transparent rounded-none m-0 p-0"
+                className="w-full text-left py-2 uppercase text-base tracking-wider text-black hover:text-gray-600 flex items-center bg-transparent rounded-none m-0 p-0"
                 onClick={() => setCurrentWorkOpen((open) => !open)}
               >
                 CURRENT WORK
               </button>
               {currentWorkOpen && (
                 <div className="pl-4">
-                  <Link to="/current-work-drawings" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>DRAWINGS</Link>
-                  <Link to="/current-work-paintings" className="block py-2 text-sm text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PAINTINGS</Link>
+                  <Link to="/current-work-drawings" className="block py-2 text-base text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>DRAWINGS</Link>
+                  <Link to="/current-work-paintings" className="block py-2 text-base text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>PAINTINGS</Link>
                 </div>
               )}
             </div>
           )}
-          <Link to="/about" className="block py-2 uppercase text-sm tracking-wider text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link to="/contact" className="block py-2 uppercase text-sm tracking-wider text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>Contact</Link>
+          <Link to="/about" className="block py-2 uppercase text-base tracking-wider text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link to="/contact" className="block py-2 uppercase text-base tracking-wider text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
       )}
     </nav>
