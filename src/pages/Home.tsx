@@ -4,13 +4,12 @@ const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  // Images from Pre2000 Photographs
   const images = [
-    'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
-    'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
-    'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
-    'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
-    'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
+    'https://live.staticflickr.com/65535/54762978071_8a584e36d7_b.jpg',
+    'https://live.staticflickr.com/65535/54762131102_54b65aceb0_b.jpg',
+    'https://live.staticflickr.com/65535/54762978091_9eda671c05_b.jpg',
+    'https://live.staticflickr.com/65535/54762978131_5a2083c2e6_b.jpg',
+    'https://live.staticflickr.com/65535/54762978166_6d0f7e2871_b.jpg',
   ];
 
   // Auto-advance carousel every 8 seconds (only when not paused)
