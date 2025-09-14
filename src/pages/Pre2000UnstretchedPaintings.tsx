@@ -10,6 +10,7 @@ interface Image {
 
 const Pre2000UnstretchedPaintings = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   const images: Image[] = [
     {
@@ -81,6 +82,8 @@ const Pre2000UnstretchedPaintings = () => {
   ];
 
   const handleImageClick = (image: Image) => {
+    const index = images.findIndex(img => img.id === image.id);
+    setCurrentImageIndex(index);
     setSelectedImage(image);
   };
 
@@ -88,6 +91,11 @@ const Pre2000UnstretchedPaintings = () => {
     if (e.target === e.currentTarget) {
       setSelectedImage(null);
     }
+  };
+
+  const handleNavigate = (index: number) => {
+    setCurrentImageIndex(index);
+    setSelectedImage(images[index]);
   };
 
   return (
@@ -110,7 +118,13 @@ const Pre2000UnstretchedPaintings = () => {
       </div>
 
       {/* Modal */}
-      <ImageModal image={selectedImage} onClose={handleModalClose} />
+      <ImageModal 
+        image={selectedImage} 
+        images={images}
+        currentIndex={currentImageIndex}
+        onClose={handleModalClose} 
+        onNavigate={handleNavigate}
+      />
     </div>
   );
 };
