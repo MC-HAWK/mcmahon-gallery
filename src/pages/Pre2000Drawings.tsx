@@ -14,36 +14,54 @@ const Pre2000Drawings = () => {
 
 
   const images: Image[] = [
-    // {
-    //   id: '1',
-    //   url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
-    //   title: 'Classical Figure Study',
-    //   description: 'Charcoal on paper \n 18" x 24"'
-    // },
-    // {
-    //   id: '2',
-    //   url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
-    //   title: 'Traditional Portrait',
-    //   description: 'Graphite on paper \n 16" x 20"'
-    // },
-    // {
-    //   id: '3',
-    //   url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
-    //   title: 'Academic Drawing',
-    //   description: 'Conté crayon on paper \n 22" x 30"'
-    // },
-    // {
-    //   id: '4',
-    //   url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
-    //   title: 'Still Life Study',
-    //   description: 'Pencil on paper \n 14" x 18"'
-    // },
-    // {
-    //   id: '5',
-    //   url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
-    //   title: 'Anatomical Study',
-    //   description: 'Charcoal on paper \n 20" x 26"'
-    // }
+    {
+      id: '1',
+      url: 'https://live.staticflickr.com/65535/54834126091_e7945c50b0_b.jpg',
+      title: 'Untitled 1980',
+      description: 'collage and pastel \n 12x8'
+    },
+    {
+      id: '2',
+      url: 'https://live.staticflickr.com/65535/54834126511_1f77b2d910_b.jpg',
+      title: 'En Cline 1980',
+      description: 'collage and pastel \n 4x9'
+    },
+    {
+      id: '3',
+      url: 'https://live.staticflickr.com/65535/54834358684_03e01073d4_b.jpg',
+      title: 'Drawing 1980',
+      description: 'collage and pastel \n 12x9'
+    },
+    {
+      id: '4',
+      url: 'https://live.staticflickr.com/65535/54834453565_66ff502931_b.jpg',
+      title: 'Untitled 1980',
+      description: 'collage and pencil \n 12x8'
+    },
+    {
+      id: '5',
+      url: 'https://live.staticflickr.com/65535/54834453835_986a0f7356_b.jpg',
+      title: 'For Manray 1980',
+      description: ' collage and pastel \n 9x5'
+    },
+    {
+      id: '6',
+      url: 'https://live.staticflickr.com/65535/54834454220_0c5fe72545_b.jpg',
+      title: 'Untitled 1981',
+      description: 'Collage and Graphite'
+    },
+    {
+      id: '7',
+      url: 'https://live.staticflickr.com/65535/54834357494_d9d7d110c2_b.jpg',
+      title: 'Tangram 1982',
+      description: 'Collage and Pastel'
+    },    
+    {
+      id: '8',
+      url: 'https://live.staticflickr.com/65535/54834357884_b6db44c21b_b.jpg',
+      title: 'Grid-el',
+      description: 'pastel on paper \n 22x30'
+    }
   ];
 
   const handleImageClick = (image: Image) => {

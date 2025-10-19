@@ -14,36 +14,41 @@ const Post2000Paintings = () => {
 
 
   const images: Image[] = [
-    // {
-    //   id: '1',
-    //   url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
-    //   title: 'Contemporary Landscape',
-    //   description: 'Acrylic on canvas \n 36" x 48"'
-    // },
-    // {
-    //   id: '2',
-    //   url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
-    //   title: 'Abstract Expression',
-    //   description: 'Oil on canvas \n 40" x 60"'
-    // },
-    // {
-    //   id: '3',
-    //   url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
-    //   title: 'Urban Composition',
-    //   description: 'Mixed media on canvas \n 30" x 40"'
-    // },
-    // {
-    //   id: '4',
-    //   url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
-    //   title: 'Color Field Study',
-    //   description: 'Acrylic on canvas \n 24" x 36"'
-    // },
-    // {
-    //   id: '5',
-    //   url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
-    //   title: 'Modern Still Life',
-    //   description: 'Oil on canvas \n 28" x 44"'
-    // }
+    {
+      id: '1',
+      url: 'https://live.staticflickr.com/65535/54833253047_c6bdafaf96_b.jpg',
+      title: 'Annunciation'
+    },
+    {
+      id: '2',
+      url: 'https://live.staticflickr.com/65535/54833253517_6ca49d8f9e_b.jpg',
+      title: 'Hitch'
+    },
+    {
+      id: '3',
+      url: 'https://live.staticflickr.com/65535/54833255567_dff88dcbb8_b.jpg',
+      title: 'En-vy 2016'
+    },
+    {
+      id: '4',
+      url: 'https://live.staticflickr.com/65535/54834110356_c9fffbc960_b.jpg',
+      title: 'Step-in-two'
+    },
+    {
+      id: '5',
+      url: 'https://live.staticflickr.com/65535/54834341619_ee6d1c3039_b.jpg',
+      title: 'Stepping En'
+    },
+    {
+      id: '6',
+      url: 'https://live.staticflickr.com/65535/54834341999_f1a7529078_b.jpg',
+      title: 'XingRedC'
+    },
+    {
+      id: '7',
+      url: 'https://live.staticflickr.com/65535/54834342214_d74a3c9ca6_b.jpg',
+      title: 'Red  Cross'
+    }
   ];
 
   const handleImageClick = (image: Image) => {
