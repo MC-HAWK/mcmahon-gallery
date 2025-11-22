@@ -65,7 +65,7 @@ const Post2000Drawings = () => {
 
   return (
     <div className="w-screen min-h-[calc(100vh-80px)] px-4 py-8">
-      <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">POST 2000 - DRAWINGS</h1>
+      <h1 className="font-bold uppercase text-4xl tracking-widest mb-8 text-center">Work Post 2000 - Drawings</h1>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
         {images.map((image) => (
           <div
