@@ -15,9 +15,9 @@ const CurrentWorkDrawings = () => {
   const images: Image[] = [
     // {
     //   id: '1',
-    //   url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
-    //   title: 'Contemporary Study I',
-    //   description: 'Mixed media on paper \n 24" x 36"'
+    //   url: 'https://live.staticflickr.com/65535/54834126091_e7945c50b0_b.jpg',
+    //   title: 'Untitled 1980',
+    //   description: 'collage and pastel \n 12x8'
     // },
     // {
     //   id: '2',
