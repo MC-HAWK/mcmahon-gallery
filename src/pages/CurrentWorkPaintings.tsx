@@ -32,18 +32,6 @@ const CurrentWorkPaintings = () => {
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '4',
-      url: 'https://live.staticflickr.com/65535/54762978086_b776acf372_b.jpg',
-      title: 'Snapper',
-      description: 'Watercolor on Paper \n 12" x 9"'
-    },
-    {
-      id: '5',
-      url: 'https://live.staticflickr.com/65535/54762978091_9eda671c05_b.jpg',
-      title: 'Hanging Masks',
-      description: 'Watercolor on Paper \n 6" x 9"'
-    },
-    {
       id: '6',
       url: 'https://live.staticflickr.com/65535/54762978131_5a2083c2e6_b.jpg',
       title: 'Pocket Pool',
@@ -74,12 +62,6 @@ const CurrentWorkPaintings = () => {
       description: 'Oil on Canvas'
     },
     {
-      id: '11',
-      url: 'https://live.staticflickr.com/65535/54763216103_2b4f3ea3ef_b.jpg',
-      title: 'Erin\'s Turn',
-      description: 'Watercolor on Paper \n 6" x 9"'
-    },
-    {
       id: '12',
       url: 'https://live.staticflickr.com/65535/54763216173_ea2b2657b3_b.jpg',
       title: 'Hackberry Drift',
@@ -108,12 +90,6 @@ const CurrentWorkPaintings = () => {
       url: 'https://live.staticflickr.com/65535/54763319930_0474045fbd_b.jpg',
       title: 'Storm Blind',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
-    },
-    {
-      id: '17',
-      url: 'https://live.staticflickr.com/65535/54763319955_a210c78a09_b.jpg',
-      title: 'T with B',
-      description: 'Oil/Acrylic on Canvas \n 24" x 10"'
     }
   ];
 

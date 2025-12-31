@@ -12,37 +12,25 @@ const CurrentWorkDrawings = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
-  const images: Image[] = [
-    // {
-    //   id: '1',
-    //   url: 'https://live.staticflickr.com/65535/54834126091_e7945c50b0_b.jpg',
-    //   title: 'Untitled 1980',
-    //   description: 'collage and pastel \n 12x8'
-    // },
-    // {
-    //   id: '2',
-    //   url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
-    //   title: 'Modern Composition',
-    //   description: 'Charcoal and ink on paper \n 30" x 40"'
-    // },
-    // {
-    //   id: '3',
-    //   url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
-    //   title: 'Abstract Figure',
-    //   description: 'Graphite and pastel on paper \n 22" x 28"'
-    // },
-    // {
-    //   id: '4',
-    //   url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
-    //   title: 'Dynamic Forms',
-    //   description: 'Ink and wash on paper \n 26" x 34"'
-    // },
-    // {
-    //   id: '5',
-    //   url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
-    //   title: 'Contemporary Portrait',
-    //   description: 'Mixed media on paper \n 20" x 24"'
-    // }
+  const images: Image[] = [ 
+    {
+      id: '1',
+      url: 'https://live.staticflickr.com/65535/54763216103_2b4f3ea3ef_b.jpg',
+      title: 'Erin\'s Turn',
+      description: 'Watercolor on Paper \n 6" x 9"'
+    },
+    {
+      id: '2',
+      url: 'https://live.staticflickr.com/65535/54762978091_9eda671c05_b.jpg',
+      title: 'Hanging Masks',
+      description: 'Watercolor on Paper \n 6" x 9"'
+    },
+    {
+      id: '3',
+      url: 'https://live.staticflickr.com/65535/54762978086_b776acf372_b.jpg',
+      title: 'Snapper',
+      description: 'Watercolor on Paper \n 12" x 9"'
+    }
   ];
 
   const handleImageClick = (image: Image) => {
