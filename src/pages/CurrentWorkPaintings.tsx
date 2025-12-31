@@ -32,61 +32,61 @@ const CurrentWorkPaintings = () => {
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '6',
+      id: '4',
       url: 'https://live.staticflickr.com/65535/54762978131_5a2083c2e6_b.jpg',
       title: 'Pocket Pool',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '7',
+      id: '5',
       url: 'https://live.staticflickr.com/65535/54762978166_6d0f7e2871_b.jpg',
       title: 'Blindside',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '8',
+      id: '6',
       url: 'https://live.staticflickr.com/65535/54762978186_4f718ace36_b.jpg',
       title: 'Y and Y-Knot',
       description: 'Oil/Acrylic on Canvas \n 60" x 40"'
     },
     {
-      id: '9',
+      id: '7',
       url: 'https://live.staticflickr.com/65535/54763207904_fc1ecc64fb_b.jpg',
       title: 'Christmas Cracker',
       description: 'Watercolor/Gouache on Paper \n 28" x 36"'
     },
     {
-      id: '10',
+      id: '8',
       url: 'https://live.staticflickr.com/65535/54763207944_f61c8692e6_b.jpg',
       title: 'For R.D.',
       description: 'Oil on Canvas'
     },
     {
-      id: '12',
+      id: '9',
       url: 'https://live.staticflickr.com/65535/54763216173_ea2b2657b3_b.jpg',
       title: 'Hackberry Drift',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '13',
+      id: '10',
       url: 'https://live.staticflickr.com/65535/54763216178_2a505ff153_b.jpg',
       title: 'Shady Side 2024',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '14',
+      id: '11',
       url: 'https://live.staticflickr.com/65535/54763216243_eeb2ef09b9_b.jpg',
       title: 'Hackberry Winter',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '15',
+      id: '12',
       url: 'https://live.staticflickr.com/65535/54763216288_128b27dcfb_b.jpg',
       title: 'Bones',
       description: 'Watercolor/Gouache on Paper \n 26" x 38"'
     },
     {
-      id: '16',
+      id: '13',
       url: 'https://live.staticflickr.com/65535/54763319930_0474045fbd_b.jpg',
       title: 'Storm Blind',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
