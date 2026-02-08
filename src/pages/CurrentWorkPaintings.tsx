@@ -90,6 +90,48 @@ const CurrentWorkPaintings = () => {
       url: 'https://live.staticflickr.com/65535/54763319930_0474045fbd_b.jpg',
       title: 'Storm Blind',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
+    },
+    {
+      id: '14',
+      url: 'https://live.staticflickr.com/65535/55006217642_ed23b8467a_b.jpg',
+      title: 'Masks on a Rack 2025',
+      description: ''
+    },
+    {
+      id: '15',
+      url: 'https://live.staticflickr.com/65535/55007361709_01fdd948ca_b.jpg',
+      title: 'Descending Masks',
+      description: ''
+    },
+    {
+      id: '16',
+      url: 'https://live.staticflickr.com/65535/54988898437_e833b65e93_b.jpg',
+      title: 'Hanging Masks, 2025',
+      description: '20" x 30"'
+    },
+    {
+      id: '17',
+      url: 'https://live.staticflickr.com/65535/54763319955_a210c78a09_b.jpg',
+      title: 'T with B',
+      description: 'Oil/Acrylic on Canvas \n 24" x 10"'
+    },
+    {
+      id: '18',
+      url: 'https://live.staticflickr.com/65535/54762978086_b776acf372_b.jpg',
+      title: 'Snapper',
+      description: 'Watercolor on Paper \n 12" x 9"'
+    },
+    {
+      id: '19',
+      url: 'https://live.staticflickr.com/65535/54762978091_9eda671c05_b.jpg',
+      title: 'Hanging Masks',
+      description: 'Watercolor on Paper \n 6" x 9"'
+    },
+    {
+      id: '20',
+      url: 'https://live.staticflickr.com/65535/54763216103_2b4f3ea3ef_b.jpg',
+      title: 'Erin\'s Turn',
+      description: 'Watercolor on Paper \n 6" x 9"'
     }
   ];
 

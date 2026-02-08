@@ -13,36 +13,66 @@ const Pre2000Photographs = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   const images: Image[] = [
-    // {
-    //   id: '1',
-    //   url: 'https://live.staticflickr.com/65535/54605147826_37280e7e3d_b.jpg',
-    //   title: 'Classic Street Scene',
-    //   description: 'Black and white photograph \n 16" x 20"'
-    // },
-    // {
-    //   id: '2',
-    //   url: 'https://live.staticflickr.com/65535/54605356478_0a37fb32b5_b.jpg',
-    //   title: 'Vintage Portrait',
-    //   description: 'Gelatin silver print \n 11" x 14"'
-    // },
-    // {
-    //   id: '3',
-    //   url: 'https://live.staticflickr.com/65535/54605147831_df11a67227_b.jpg',
-    //   title: 'Historical Architecture',
-    //   description: 'Black and white photograph \n 20" x 24"'
-    // },
-    // {
-    //   id: '4',
-    //   url: 'https://live.staticflickr.com/65535/54605340734_03b826ed7b_b.jpg',
-    //   title: 'Documentary Image',
-    //   description: 'Gelatin silver print \n 8" x 10"'
-    // },
-    // {
-    //   id: '5',
-    //   url: 'https://live.staticflickr.com/65535/54605147841_6f03a24daf_b.jpg',
-    //   title: 'Traditional Landscape',
-    //   description: 'Black and white photograph \n 18" x 22"'
-    // }
+    {
+      id: '1',
+      url: 'https://live.staticflickr.com/65535/55070190667_921e0e6107_b.jpg',
+      title: 'Gallery 1984',
+      description: ''
+    },
+    {
+      id: '2',
+      url: 'https://live.staticflickr.com/65535/55070196702_c494fc29e7_b.jpg',
+      title: 'Gridology',
+      description: ''
+    },
+    {
+      id: '3',
+      url: 'https://live.staticflickr.com/65535/55071091001_768bfd6850_b.jpg',
+      title: 'Grid School II 1984',
+      description: ''
+    },
+    {
+      id: '4',
+      url: 'https://live.staticflickr.com/65535/55071092056_a2bc50b8bc_b.jpg',
+      title: 'Grid School 1984',
+      description: ''
+    },
+    {
+      id: '5',
+      url: 'https://live.staticflickr.com/65535/55071092321_dcd92e9deb_b.jpg',
+      title: 'Lineup 2008',
+      description: ''
+    },
+    {
+      id: '6',
+      url: 'https://live.staticflickr.com/65535/55071094921_2665dcfb91_b.jpg',
+      title: 'Untitled 2006',
+      description: ''
+    },
+    {
+      id: '7',
+      url: 'https://live.staticflickr.com/65535/55071278838_2eefe08ac6_b.jpg',
+      title: 'Formation 1984',
+      description: ''
+    },
+    {
+      id: '8',
+      url: 'https://live.staticflickr.com/65535/55071344629_bd2bdbe526_b.jpg',
+      title: 'Double Cross 2008',
+      description: ''
+    },
+    {
+      id: '9',
+      url: 'https://live.staticflickr.com/65535/55071454215_a95bfb5ba8_b.jpg',
+      title: 'Double Cross II-2008',
+      description: ''
+    },
+    {
+      id: '10',
+      url: 'https://live.staticflickr.com/65535/55071456155_58e76af240_b.jpg',
+      title: 'Lineup 2008',
+      description: ''
+    }
   ];
 
   const handleImageClick = (image: Image) => {
