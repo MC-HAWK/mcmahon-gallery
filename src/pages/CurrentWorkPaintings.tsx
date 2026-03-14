@@ -108,30 +108,6 @@ const CurrentWorkPaintings = () => {
       url: 'https://live.staticflickr.com/65535/54988898437_e833b65e93_b.jpg',
       title: 'Hanging Masks, 2025',
       description: '20" x 30"'
-    },
-    {
-      id: '17',
-      url: 'https://live.staticflickr.com/65535/54763319955_a210c78a09_b.jpg',
-      title: 'T with B',
-      description: 'Oil/Acrylic on Canvas \n 24" x 10"'
-    },
-    {
-      id: '18',
-      url: 'https://live.staticflickr.com/65535/54762978086_b776acf372_b.jpg',
-      title: 'Snapper',
-      description: 'Watercolor on Paper \n 12" x 9"'
-    },
-    {
-      id: '19',
-      url: 'https://live.staticflickr.com/65535/54762978091_9eda671c05_b.jpg',
-      title: 'Hanging Masks',
-      description: 'Watercolor on Paper \n 6" x 9"'
-    },
-    {
-      id: '20',
-      url: 'https://live.staticflickr.com/65535/54763216103_2b4f3ea3ef_b.jpg',
-      title: 'Erin\'s Turn',
-      description: 'Watercolor on Paper \n 6" x 9"'
     }
   ];
 
