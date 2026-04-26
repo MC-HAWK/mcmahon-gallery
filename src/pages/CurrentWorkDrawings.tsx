@@ -54,6 +54,12 @@ const CurrentWorkDrawings = () => {
       url: 'https://live.staticflickr.com/65535/55221425878_4957bc6654_b.jpg',
       title: 'Quartet 2026',
       description: '16 x 12  Ink/Gouache'
+    },
+    {
+      id: '8',
+      url: 'https://live.staticflickr.com/65535/55221425898_282a99b1e4_b.jpg',
+      title: 'Drawing 4-26',
+      description: '16 x 12  Watercolor'
     }
   ];
 

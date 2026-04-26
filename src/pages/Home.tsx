@@ -5,11 +5,31 @@ const Home = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   const images = [
-    'https://live.staticflickr.com/65535/54762978071_8a584e36d7_b.jpg',
-    'https://live.staticflickr.com/65535/54762131102_54b65aceb0_b.jpg',
-    'https://live.staticflickr.com/65535/54762978091_9eda671c05_b.jpg',
     'https://live.staticflickr.com/65535/54762978131_5a2083c2e6_b.jpg',
     'https://live.staticflickr.com/65535/54762978166_6d0f7e2871_b.jpg',
+    'https://live.staticflickr.com/65535/54762978186_4f718ace36_b.jpg',
+    'https://live.staticflickr.com/65535/54763207904_fc1ecc64fb_b.jpg',
+    'https://live.staticflickr.com/65535/54763207944_f61c8692e6_b.jpg',
+    'https://live.staticflickr.com/65535/54763216173_ea2b2657b3_b.jpg',
+    'https://live.staticflickr.com/65535/54763216178_2a505ff153_b.jpg',
+    'https://live.staticflickr.com/65535/54763216243_eeb2ef09b9_b.jpg',
+    'https://live.staticflickr.com/65535/54763216103_2b4f3ea3ef_b.jpg',
+    'https://live.staticflickr.com/65535/54762978091_9eda671c05_b.jpg',
+    'https://live.staticflickr.com/65535/54762978086_b776acf372_b.jpg',
+    'https://live.staticflickr.com/65535/55228459793_f1b582a837_b.jpg',
+    'https://live.staticflickr.com/65535/55222839260_704e75ff7a_b.jpg',
+    'https://live.staticflickr.com/65535/55221669795_86c65540f8_b.jpg',
+    'https://live.staticflickr.com/65535/55221425878_4957bc6654_b.jpg',
+    'https://live.staticflickr.com/65535/55221425898_282a99b1e4_b.jpg',
+    'https://live.staticflickr.com/65535/54762978071_8a584e36d7_b.jpg',
+    'https://live.staticflickr.com/65535/54762978061_8b1a3aef50_b.jpg',
+    'https://live.staticflickr.com/65535/54762131102_54b65aceb0_b.jpg',
+    'https://live.staticflickr.com/65535/54763216288_128b27dcfb_b.jpg',
+    'https://live.staticflickr.com/65535/54763319930_0474045fbd_b.jpg',
+    'https://live.staticflickr.com/65535/55006217642_ed23b8467a_b.jpg',
+    'https://live.staticflickr.com/65535/55007361709_01fdd948ca_b.jpg',
+    'https://live.staticflickr.com/65535/54988898437_e833b65e93_b.jpg',
+    'https://live.staticflickr.com/65535/55220365467_6a30a46378_b.jpg',
   ];
 
   // Auto-advance carousel every 8 seconds (only when not paused)
