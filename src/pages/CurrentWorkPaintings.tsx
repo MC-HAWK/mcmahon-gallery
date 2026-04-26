@@ -108,6 +108,12 @@ const CurrentWorkPaintings = () => {
       url: 'https://live.staticflickr.com/65535/54988898437_e833b65e93_b.jpg',
       title: 'Hanging Masks, 2025',
       description: '20" x 30"'
+    },
+    {
+      id: '17',
+      url: 'https://live.staticflickr.com/65535/55220365467_6a30a46378_b.jpg',
+      title: 'Bellevue #2',
+      description: '20 x 30 Watercolor/Gouache'
     }
   ];
 

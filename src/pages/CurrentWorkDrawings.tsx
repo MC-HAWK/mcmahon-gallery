@@ -30,6 +30,30 @@ const CurrentWorkDrawings = () => {
       url: 'https://live.staticflickr.com/65535/54762978086_b776acf372_b.jpg',
       title: 'Snapper',
       description: 'Watercolor on Paper \n 12" x 9"'
+    },
+    {
+      id: '4',
+      url: 'https://live.staticflickr.com/65535/55228459793_f1b582a837_b.jpg',
+      title: 'Masks #4 2026',
+      description: '16 x 12" Watercolor/Gouache'
+    },
+    {
+      id: '5',
+      url: 'https://live.staticflickr.com/65535/55222839260_704e75ff7a_b.jpg',
+      title: 'Masks #3',
+      description: '16 x 12  Watercolor/Gouache'
+    },
+    {
+      id: '6',
+      url: 'https://live.staticflickr.com/65535/55221669795_86c65540f8_b.jpg',
+      title: 'Three Masks 2026',
+      description: '9 x 12 Ink/Crayon'
+    },
+    {
+      id: '7',
+      url: 'https://live.staticflickr.com/65535/55221425878_4957bc6654_b.jpg',
+      title: 'Quartet 2026',
+      description: '16 x 12  Ink/Gouache'
     }
   ];
 
