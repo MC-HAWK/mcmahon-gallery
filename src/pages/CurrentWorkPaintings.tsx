@@ -105,15 +105,45 @@ const CurrentWorkPaintings = () => {
     },
     {
       id: '16',
+      url: 'https://live.staticflickr.com/65535/55220365467_6a30a46378_b.jpg',
+      title: 'Bellevue #2',
+      description: '20 x 30 Watercolor/Gouache'
+    },
+    {
+      id: '17',
       url: 'https://live.staticflickr.com/65535/54988898437_e833b65e93_b.jpg',
       title: 'Hanging Masks, 2025',
       description: '20" x 30"'
     },
     {
-      id: '17',
-      url: 'https://live.staticflickr.com/65535/55220365467_6a30a46378_b.jpg',
-      title: 'Bellevue #2',
-      description: '20 x 30 Watercolor/Gouache'
+      id: '18',
+      url: 'https://live.staticflickr.com/65535/55242895508_d00b74a8b9_b.jpg',
+      title: 'Masks #2',
+      description: '16 x 12" Watercolor/Gouache'
+    },
+    {
+      id: '19',
+      url: 'https://live.staticflickr.com/65535/55222839260_704e75ff7a_b.jpg',
+      title: 'Masks #3',
+      description: '16 x 12  Watercolor/Gouache'
+    },
+    {
+      id: '20',
+      url: 'https://live.staticflickr.com/65535/55228459793_f1b582a837_b.jpg',
+      title: 'Masks #4 2026',
+      description: '16 x 12" Watercolor/Gouache'
+    },
+    {
+      id: '21',
+      url: 'https://live.staticflickr.com/65535/55242759166_2eda371a36_b.jpg',
+      title: 'Masks #5',
+      description: '16 x 12" Gouache /Paper'
+    },
+    {
+      id: '22',
+      url: 'https://live.staticflickr.com/65535/55242762031_e71b4f6377_b.jpg',
+      title: 'Masks #6',
+      description: '16 x 12" Watercolor/Gouache'
     }
   ];
 
