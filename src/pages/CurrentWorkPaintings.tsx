@@ -144,7 +144,31 @@ const CurrentWorkPaintings = () => {
       url: 'https://live.staticflickr.com/65535/55242762031_e71b4f6377_b.jpg',
       title: 'Masks #6',
       description: '16 x 12" Watercolor/Gouache'
-    }
+    },
+    {
+      id: '23',
+      url: 'https://live.staticflickr.com/65535/55261842288_dc6245bd42_b.jpg',
+      title: 'Masks #7',
+      description: '16 x 12" Watercolor/Gouache on paper'
+    },
+    {
+      id: '24',
+      url: 'https://live.staticflickr.com/65535/55261710106_ed0531ee6e_b.jpg',
+      title: 'Masks #8',
+      description: '16 x 12" Watercolor on Paper'
+    },
+    {
+      id: '25',
+      url: 'https://live.staticflickr.com/65535/55282738635_6c28e4fa22_b.jpg',
+      title: 'Masks #9',
+      description: '16 x 12"  Gouache/Watercolor on Paper'
+    },
+    {
+      id: '26',
+      url: 'https://live.staticflickr.com/65535/55283599770_ac18daacf9_b.jpg',
+      title: 'Masks 10',
+      description: '16 x 12"  Watercolor/Gouache on Paper'
+    },
   ];
 
   const handleImageClick = (image: Image) => {
