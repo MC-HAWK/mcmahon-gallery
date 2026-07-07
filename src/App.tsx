@@ -1,3 +1,4 @@
+// Setup verified on new PC — Jul 2026
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
