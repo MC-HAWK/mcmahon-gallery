@@ -48,7 +48,13 @@ const CurrentWorkDrawings = () => {
       url: 'https://live.staticflickr.com/65535/55241848837_d3483e3364_b.jpg',
       title: 'Blue Masks',
       description: '9 x 12" Gouache on Paper'
-    }
+    },
+    {
+      id: '7',
+      url: 'https://live.staticflickr.com/65535/55421708361_9ce6f5f55f_b.jpg',
+      title: 'Study for Quintet',
+      description: ''
+    },
   ];
 
   const handleImageClick = (image: Image) => {

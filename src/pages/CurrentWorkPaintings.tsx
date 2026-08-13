@@ -169,6 +169,48 @@ const CurrentWorkPaintings = () => {
       title: 'Masks 10',
       description: '16 x 12"  Watercolor/Gouache on Paper'
     },
+    {
+      id: '27',
+      url: 'https://live.staticflickr.com/65535/55420742072_8ea52e5075_b.jpg',
+      title: 'Quartet #9',
+      description: '16 x 12", Gouache/Watercolor on Paper'
+    },
+    {
+      id: '28',
+      url: 'https://live.staticflickr.com/65535/55421890179_d39f9d01a3_b.jpg',
+      title: 'Bellevue #4',
+      description: '20 x 30" Gouache /Watercolor on Paper'
+    },
+    {
+      id: '29',
+      url: 'https://live.staticflickr.com/65535/55422107905_8737294d2d_b.jpg',
+      title: 'Quartet #12',
+      description: '16 x 12", Gouache/Watercolor on Paper'
+    },
+    {
+      id: '30',
+      url: 'https://live.staticflickr.com/65535/55422110770_7e23616d1a_b.jpg',
+      title: 'Masks in Mist',
+      description: '16 x 12", Gouache/Watercolor on Paper'
+    },
+    {
+      id: '31',
+      url: 'https://live.staticflickr.com/65535/55420744562_76b43baca7_b.jpg',
+      title: 'Quartet #15',
+      description: '16 x 12", Gouache/Watercolor on Paper'
+    },
+    {
+      id: '32',
+      url: 'https://live.staticflickr.com/65535/55421711981_58b1276965_b.jpg',
+      title: 'Snakes and Ladders',
+      description: '16 x 12", Gouache/Watercolor on Paper'
+    },
+    {
+      id: '33',
+      url: 'https://live.staticflickr.com/65535/55421845443_445399ac48_b.jpg',
+      title: 'Mask and Reveal #1',
+      description: '40 x 30" Gouache and Watercolor on Paper 2026'
+    },
   ];
 
   const handleImageClick = (image: Image) => {
