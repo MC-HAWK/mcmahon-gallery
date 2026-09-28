@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ImageModal from '../components/ImageModal';
+import { withFlickrIds } from '../utils/galleryImages';
 
 interface Image {
   id: string;
@@ -12,206 +13,208 @@ const CurrentWorkPaintings = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
-  const images: Image[] = [
+  const images = withFlickrIds([
     {
-      id: '1',
       url: 'https://live.staticflickr.com/65535/54762978071_8a584e36d7_b.jpg',
       title: 'Masks and Rafters',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '2',
       url: 'https://live.staticflickr.com/65535/54762978061_8b1a3aef50_b.jpg',
       title: 'Parenthesis',
       description: 'Acrylic/Oil on Canvas'
     },
     {
-      id: '3',
       url: 'https://live.staticflickr.com/65535/54762131102_54b65aceb0_b.jpg',
       title: 'Flaco\'s Purchase',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '4',
       url: 'https://live.staticflickr.com/65535/54762978131_5a2083c2e6_b.jpg',
       title: 'Pocket Pool',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '5',
       url: 'https://live.staticflickr.com/65535/54762978166_6d0f7e2871_b.jpg',
       title: 'Blindside',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '6',
       url: 'https://live.staticflickr.com/65535/54762978186_4f718ace36_b.jpg',
       title: 'Y and Y-Knot',
       description: 'Oil/Acrylic on Canvas \n 60" x 40"'
     },
     {
-      id: '7',
       url: 'https://live.staticflickr.com/65535/54763207904_fc1ecc64fb_b.jpg',
       title: 'Christmas Cracker',
       description: 'Watercolor/Gouache on Paper \n 28" x 36"'
     },
     {
-      id: '8',
       url: 'https://live.staticflickr.com/65535/54763207944_f61c8692e6_b.jpg',
       title: 'For R.D.',
       description: 'Oil on Canvas'
     },
     {
-      id: '9',
       url: 'https://live.staticflickr.com/65535/54763216173_ea2b2657b3_b.jpg',
       title: 'Hackberry Drift',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '10',
-      url: 'https://live.staticflickr.com/65535/54763216178_2a505ff153_b.jpg',
-      title: 'Shady Side 2024',
-      description: 'Gouache/Watercolor on Paper \n 20" x 30"'
-    },
-    {
-      id: '11',
       url: 'https://live.staticflickr.com/65535/54763216243_eeb2ef09b9_b.jpg',
       title: 'Hackberry Winter',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '12',
       url: 'https://live.staticflickr.com/65535/54763216288_128b27dcfb_b.jpg',
       title: 'Bones',
       description: 'Watercolor/Gouache on Paper \n 26" x 38"'
     },
     {
-      id: '13',
       url: 'https://live.staticflickr.com/65535/54763319930_0474045fbd_b.jpg',
       title: 'Storm Blind',
       description: 'Gouache/Watercolor on Paper \n 20" x 30"'
     },
     {
-      id: '14',
       url: 'https://live.staticflickr.com/65535/55006217642_ed23b8467a_b.jpg',
       title: 'Masks on a Rack 2025',
       description: ''
     },
     {
-      id: '15',
       url: 'https://live.staticflickr.com/65535/55007361709_01fdd948ca_b.jpg',
       title: 'Descending Masks',
       description: ''
     },
     {
-      id: '16',
       url: 'https://live.staticflickr.com/65535/55220365467_6a30a46378_b.jpg',
       title: 'Bellevue #2',
       description: '20 x 30 Watercolor/Gouache'
     },
     {
-      id: '17',
       url: 'https://live.staticflickr.com/65535/54988898437_e833b65e93_b.jpg',
       title: 'Hanging Masks, 2025',
       description: '20" x 30"'
     },
     {
-      id: '18',
       url: 'https://live.staticflickr.com/65535/55242895508_d00b74a8b9_b.jpg',
       title: 'Masks #2',
       description: '16 x 12" Watercolor/Gouache'
     },
     {
-      id: '19',
       url: 'https://live.staticflickr.com/65535/55222839260_704e75ff7a_b.jpg',
       title: 'Masks #3',
       description: '16 x 12  Watercolor/Gouache'
     },
     {
-      id: '20',
       url: 'https://live.staticflickr.com/65535/55228459793_f1b582a837_b.jpg',
       title: 'Masks #4 2026',
       description: '16 x 12" Watercolor/Gouache'
     },
     {
-      id: '21',
       url: 'https://live.staticflickr.com/65535/55242759166_2eda371a36_b.jpg',
       title: 'Masks #5',
       description: '16 x 12" Gouache /Paper'
     },
     {
-      id: '22',
       url: 'https://live.staticflickr.com/65535/55242762031_e71b4f6377_b.jpg',
       title: 'Masks #6',
       description: '16 x 12" Watercolor/Gouache'
     },
     {
-      id: '23',
       url: 'https://live.staticflickr.com/65535/55261842288_dc6245bd42_b.jpg',
       title: 'Masks #7',
       description: '16 x 12" Watercolor/Gouache on paper'
     },
     {
-      id: '24',
       url: 'https://live.staticflickr.com/65535/55261710106_ed0531ee6e_b.jpg',
       title: 'Masks #8',
       description: '16 x 12" Watercolor on Paper'
     },
     {
-      id: '25',
       url: 'https://live.staticflickr.com/65535/55282738635_6c28e4fa22_b.jpg',
       title: 'Masks #9',
       description: '16 x 12"  Gouache/Watercolor on Paper'
     },
     {
-      id: '26',
       url: 'https://live.staticflickr.com/65535/55283599770_ac18daacf9_b.jpg',
       title: 'Masks 10',
       description: '16 x 12"  Watercolor/Gouache on Paper'
     },
     {
-      id: '27',
       url: 'https://live.staticflickr.com/65535/55420742072_8ea52e5075_b.jpg',
       title: 'Quartet #9',
       description: '16 x 12", Gouache/Watercolor on Paper'
     },
     {
-      id: '28',
       url: 'https://live.staticflickr.com/65535/55421890179_d39f9d01a3_b.jpg',
       title: 'Bellevue #4',
       description: '20 x 30" Gouache /Watercolor on Paper'
     },
     {
-      id: '29',
       url: 'https://live.staticflickr.com/65535/55422107905_8737294d2d_b.jpg',
       title: 'Quartet #12',
       description: '16 x 12", Gouache/Watercolor on Paper'
     },
     {
-      id: '30',
       url: 'https://live.staticflickr.com/65535/55422110770_7e23616d1a_b.jpg',
       title: 'Masks in Mist',
       description: '16 x 12", Gouache/Watercolor on Paper'
     },
     {
-      id: '31',
       url: 'https://live.staticflickr.com/65535/55420744562_76b43baca7_b.jpg',
       title: 'Quartet #15',
       description: '16 x 12", Gouache/Watercolor on Paper'
     },
     {
-      id: '32',
       url: 'https://live.staticflickr.com/65535/55421711981_58b1276965_b.jpg',
       title: 'Snakes and Ladders',
       description: '16 x 12", Gouache/Watercolor on Paper'
     },
     {
-      id: '33',
       url: 'https://live.staticflickr.com/65535/55421845443_445399ac48_b.jpg',
       title: 'Mask and Reveal #1',
       description: '40 x 30" Gouache and Watercolor on Paper 2026'
+    },//new stuff below
+    {
+      url: 'https://live.staticflickr.com/65535/55554536671_09dccd6258_b.jpg',
+      title: 'Masks and Moonlight',
+      description: '20 x 30 Gouache/Watercolor on Paper'
     },
-  ];
+    {
+      url: 'https://live.staticflickr.com/65535/55554698034_fbd80be706_b.jpg',
+      title: 'Snakes and Ladders #4',
+      description: '20 x 30 Gouache/Watercolor on Paper'
+    },
+    {
+      url: 'https://live.staticflickr.com/65535/55553509677_297d99ec4d_b.jpg',
+      title: 'Snakes and Ladders #5',
+      description: '20 x 30 Gouache/Watercolor on Paper'
+    },
+    {
+      url: 'https://live.staticflickr.com/65535/55554923305_e91855124c_b.jpg',
+      title: 'Snakes and Ladders #6',
+      description: '16 x 12 Gouache/Watercolor on Paper'
+    },
+    {
+      url: 'https://live.staticflickr.com/65535/55554697979_04730f9914_b.jpg',
+      title: 'Reveal Right',
+      description: '16 x 12 Gouache/Watercolor on Paper'
+    },
+    {
+      url: 'https://live.staticflickr.com/65535/55554536761_f1cbefc72a_b.jpg',
+      title: 'Lieterspiel',
+      description: '30 x 40 Gouache/Watercolor on Paper'
+    },    
+    {
+      url: 'https://live.staticflickr.com/65535/55553509712_afc0b30911_b.jpg',
+      title: 'Lieterspiel #2',
+      description: '30 x 40 Gouache/Watercolor on Paper'
+    },
+    {
+      url: 'https://live.staticflickr.com/65535/55554698019_f6242d83f4_b.jpg',
+      title: 'Blind Leap',
+      description: '20 x 30 Gouache/Watercolor on Paper'
+    },
+  ]);
 
   const handleImageClick = (image: Image) => {
     const index = images.findIndex(img => img.id === image.id);
