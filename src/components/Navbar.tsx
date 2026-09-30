@@ -91,7 +91,7 @@ const Navbar = () => {
             </button>
             {aboutDropdown && (
               <div
-                className="absolute left-0 mt-2 w-72 bg-white text-black border border-gray-200 shadow-lg rounded z-50"
+                className="absolute right-0 mt-2 w-72 bg-white text-black border border-gray-200 shadow-lg rounded z-50"
                 style={{ minWidth: '18rem' }}
               >
                 <Link to="/about" className="block px-4 py-2 text-black uppercase text-base tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setAboutDropdown(false)}>Artist Statement</Link>
