@@ -5,10 +5,13 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(true); // for mobile accordion, expanded by default
   const [galleryDropdown, setGalleryDropdown] = useState(false); // for desktop dropdown
+  const [aboutOpen, setAboutOpen] = useState(true); // for mobile accordion, expanded by default
+  const [aboutDropdown, setAboutDropdown] = useState(false); // for desktop dropdown
   const [post2000Open, setPost2000Open] = useState(true); // for mobile, expanded by default
   const [pre2000Open, setPre2000Open] = useState(true); // for mobile, expanded by default
   const [currentWorkOpen, setCurrentWorkOpen] = useState(true); // for mobile, expanded by default
   const galleryDropdownRef = useRef<HTMLDivElement>(null);
+  const aboutDropdownRef = useRef<HTMLDivElement>(null);
 
   // Close dropdown on outside click (desktop)
   useEffect(() => {
@@ -19,8 +22,14 @@ const Navbar = () => {
       ) {
         setGalleryDropdown(false);
       }
+      if (
+        aboutDropdownRef.current &&
+        !aboutDropdownRef.current.contains(event.target as Node)
+      ) {
+        setAboutDropdown(false);
+      }
     }
-    if (galleryDropdown) {
+    if (galleryDropdown || aboutDropdown) {
       document.addEventListener('mousedown', handleClickOutside);
     } else {
       document.removeEventListener('mousedown', handleClickOutside);
@@ -28,7 +37,7 @@ const Navbar = () => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [galleryDropdown]);
+  }, [galleryDropdown, aboutDropdown]);
 
   return (
     <nav className="fixed top-0 left-0 w-screen bg-white border-b border-gray-100 z-50">
@@ -73,12 +82,28 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <Link to="/about" className="uppercase text-base tracking-wider text-black hover:text-gray-600">About</Link>
+          <div className="relative" ref={aboutDropdownRef}>
+            <button
+              className="uppercase text-base tracking-wider text-black hover:text-gray-600 flex items-center gap-1 bg-transparent border-none p-0 m-0 focus:outline-none"
+              onClick={() => setAboutDropdown((open) => !open)}
+            >
+              About
+            </button>
+            {aboutDropdown && (
+              <div
+                className="absolute left-0 mt-2 w-72 bg-white text-black border border-gray-200 shadow-lg rounded z-50"
+                style={{ minWidth: '18rem' }}
+              >
+                <Link to="/about" className="block px-4 py-2 text-black uppercase text-base tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setAboutDropdown(false)}>Artist Statement</Link>
+                <Link to="/notes-masks-and-reveals" className="block px-4 py-2 text-black uppercase text-base tracking-wider hover:bg-gray-100 hover:text-gray-600" onClick={() => setAboutDropdown(false)}>Notes on &ldquo;Masks and Reveals&rdquo;</Link>
+              </div>
+            )}
+          </div>
           <Link to="/contact" className="uppercase text-base tracking-wider text-black hover:text-gray-600">Contact</Link>
         </div>
         {/* Hamburger for mobile */}
         <div className="md:hidden">
-          <button onClick={() => { setMenuOpen(!menuOpen); if (!menuOpen) { setGalleryOpen(true); setPost2000Open(true); setPre2000Open(true); setCurrentWorkOpen(true); } }} className="bg-white text-black-600 focus:outline-none border border-black-300 rounded p-1">
+          <button onClick={() => { setMenuOpen(!menuOpen); if (!menuOpen) { setGalleryOpen(true); setAboutOpen(true); setPost2000Open(true); setPre2000Open(true); setCurrentWorkOpen(true); } }} className="bg-white text-black-600 focus:outline-none border border-black-300 rounded p-1">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -140,7 +165,18 @@ const Navbar = () => {
               <Link to="/pre2000-photographs" className="block py-2 uppercase text-base tracking-wider text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>Photographic Work</Link>
             </div>
           )}
-          <Link to="/about" className="block py-2 uppercase text-base tracking-wider text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>About</Link>
+          <button
+            className="w-full text-left py-2 uppercase text-base tracking-wider text-black hover:text-gray-600 flex items-center bg-transparent rounded-none m-0 p-0"
+            onClick={() => setAboutOpen((open) => !open)}
+          >
+            About
+          </button>
+          {aboutOpen && (
+            <div className="pl-4">
+              <Link to="/about" className="block py-2 text-base text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>Artist Statement</Link>
+              <Link to="/notes-masks-and-reveals" className="block py-2 text-base text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>Notes on &ldquo;Masks and Reveals&rdquo;</Link>
+            </div>
+          )}
           <Link to="/contact" className="block py-2 uppercase text-base tracking-wider text-black hover:text-gray-600" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
       )}

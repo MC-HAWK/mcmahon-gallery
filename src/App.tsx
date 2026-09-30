@@ -6,6 +6,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import ExperimentalHome from './pages/ExperimentalHome';
 import About from './pages/About';
+import NotesMasksAndReveals from './pages/NotesMasksAndReveals';
 import Contact from './pages/Contact';
 
 // POST 2000 Galleries
@@ -51,6 +52,7 @@ function App() {
               
               {/* Other Routes */}
               <Route path="/about" element={<About />} />
+              <Route path="/notes-masks-and-reveals" element={<NotesMasksAndReveals />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
